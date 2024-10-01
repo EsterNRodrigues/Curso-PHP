@@ -4,8 +4,69 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Exemplo de HTML semântico</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <header> <h1>Bem vindo</h1></header>
+    <!--Cabeçalho do site-->
+    <header>
+        <h1>Bem vindo</h1>
+        <p>Aqui você encontra informações e imagens interessantes</p>
+    </header>
+    <!--Menu de navegação-->
+    <nav>
+        <ul>
+            <li> <a href="#home">Início</a></li>
+            <li> <a href="#galeria">Galeria</a></li>
+            <li> <a href="#table">Tabela</a></li>
+            <li> <a href="#contact">Contato</a></li>
+        </ul>
+    </nav>
+    <!--Conteúdo Principal-->
+    <main>
+        <section id="gallery">
+            <h2>Galeria de imagens</h2>
+            <img src="https://via.placeholder.com/150" alt="Imagem 1">
+            <img src="https://via.placeholder.com/150" alt="Imagem 2">
+            <img src="https://via.placeholder.com/150" alt="Imagem 3">
+            <img src="https://via.placeholder.com/150" alt="Imagem 4">
+            </section>
+            <section id="table">
+                <h2>Tabela de informações</h2>
+                <table>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Idade</th>
+                        <th>Profissão</th>
+                    </tr>
+                    <tr>
+                        <td>João Silva</td>
+                        <td>30</td>
+                        <td>Engenheiro</td>
+                    </tr>
+                    <tr>
+                        <td>Maria Oliveira</td>
+                        <td>28</td>
+                        <td>Designer</td>
+                    </tr>
+                    <tr>
+                        <td>Pedro Costa</td>
+                        <td>35</td>
+                        <td>Desenvolvedor</td>
+                    </tr>
+                </table>
+            </section>
+    </main>
+    <!--Rodapé do site-->
+    <footer>
+        <nav>
+            <ul>
+                <li> <a href="#home">Início</a></li>
+                <li> <a href="#galeria">Galeria</a></li>
+                <li> <a href="#table">Tabela</a></li>
+                <li> <a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 Meu site. Todos os direitos reservados</p>
+    </footer>
   </body>
 </html>
