@@ -127,6 +127,44 @@ $introText = "Aqui você encontra informações e imagens interessantes, tudo ge
                 ?>
             </table>
         </section>
+
+        <!-- Inicio do formulário de contato -->
+        <section id="contact">
+            <h2> Contato </h2>
+            <form action="#contact" method="post">
+                <label for="name">Nome:</label><br>
+                <input type="text" name="name" id="name" required><br><br>
+
+
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" required><br><br>
+
+
+                <label for="message">Mensagem:</label><br>
+                <textarea name="message" id="message" required></textarea><br><br>
+
+
+                <input type="submit" value="Enviar">
+            </form>
+            <?php
+            // Verificar se o formulario foi submetido
+            if ($_SERVER["REQUEST_METHOD"] == "POST") {
+                // Capturar os dados enviados pelo formulário
+                $name = htmlspecialchars($_POST["name"]);
+                $email = htmlspecialchars($_POST["email"]);
+                $message = htmlspecialchars($_POST["message"]);
+
+
+                // Exibir uma mensagem de confirmação
+                echo "<h3>Obrigado pelo contato, $name!</h3>";
+                echo "<p>Email: $email</p>";
+                echo "<p>Mensagem: $message</p>";
+            }
+
+
+            ?>
+        </section>
+
     </main>
 
     <!-- Rodapé do site -->
